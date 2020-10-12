@@ -10,6 +10,9 @@ class Dog(val name: String, weight_param: Int, breed_param: String) {
         get() = weight/2.2
 
     val breed = breed_param
+    init {
+        println("The breed is $breed")
+    }
 
     fun bark() {
         println(if (weight < 20) "Yip!" else "Woof!!")
